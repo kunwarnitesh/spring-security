@@ -17,6 +17,8 @@ public class User implements Serializable{
 
     private String password;
 
+    private boolean enabled;
+
     public String getUsername() {
         return username;
     }
@@ -40,5 +42,13 @@ public class User implements Serializable{
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 '}';
+    }
+
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
     }
 }
